@@ -11,7 +11,7 @@ const flightSchema = new Schema({
   flightNo: Number,
   departs: {
     type: Date,
-    default: oneYearFromNow()
+    ////default: oneYearFromNow()
   }, 
 }, {
   timestamps: true

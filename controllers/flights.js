@@ -7,9 +7,11 @@ function newFlight (req, res) {
 }
 
 function create (req, res) {
+  console.log("Wassup.Req", req.body);
   Flight.create(req.body)
   .then(flight => {
-    res.redirect(`/flights/new`)
+    console.log("Show me flights", flight);
+    res.redirect(`/flights`)
   })
   .catch(err => {
     res.redirect('/flights/new')
