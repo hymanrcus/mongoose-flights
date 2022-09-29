@@ -114,5 +114,5 @@ export {
   deleteFlight as delete,
   edit,
   update,
-  // createTicket
+  createTicket
 }
